@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://ui-avatars.com/api/?name=P+B&background=f97316&color=fff&rounded=true&size=128" alt="PatiBak Logo" width="100"/>
   <h1>PatiBak 🐾</h1>
   <p><strong>Hayvan Dostlarımız İçin Evlat Edinme ve Geçici Yuva Platformu</strong></p>
 </div>
@@ -8,79 +7,75 @@
 
 ## 🐶 Proje Hakkında (About the Project)
 
-PatiBak, sokak hayvanlarına sıcak bir yuva bulmayı amaçlayan ve aynı zamanda tatile veya iş seyahatine çıkacak evcil hayvan sahiplerinin "Geçici Yuvalar (Pet Sitters)" bulmasına olanak sağlayan tam donanımlı bir mobil uygulamadır. Modern, kullanıcı dostu ve sevgi dolu tasarımıyla hem hayvanseverleri hem de minik dostlarımızı bir araya getiriyor.
+PatiBak, evcil hayvanlarınıza yeni sahipler bulmayı hedefleyen ve aynı zamanda evcil hayvan sahiplerinin seyahat, iş veya diğer durumlarda güvenilir **geçici bakıcılar (pet sitters)** bulmasını sağlayan kapsamlı bir mobil uygulamadır.
 
-### ✨ Temel Özellikler
-- **Keşfet (Ana Sayfa):** Sahiplendirilmeyi bekleyen patili dostların veya geçici bakıcı arayan ilanların modern akış sistemi.
-- **Detaylı İlan Sayfası:** Hayvanın yaş, cins, kilo ve konum bilgilerini gösteren premium kart tasarımı.
-- **Gerçek Zamanlı Sohbet (Messages):** WhatsApp ve iOS mesajları standartlarında `Inset Grouped` arayüze sahip özel mesajlaşma sistemi. Okundu/Okunmadı bildirimleriyle anlık iletişim imkânı.
-- **Akıllı Profil Yönetimi:** Kullanıcı "Güvenlik Puanları", yorum analizleri ve tam simetrik Ayarlar/Menü entegrasyonu.
-- **Güvenli PatiBak Onayı:** Sahte hesapları engelleyen ve güvenliği ön planda tutan bir "Doğrulanmış Hesap" (Verified) yapısı.
-- **Şık Animasyonlar:** İlk girişte karşılayan yumuşak geçişli Splash ekran ve özel tab bar animasyonları.
-- **Güvenli Altyapı:** BCrypt tabanlı şifreleme ve JWT tabanlı akıllı oturum yönetimi.
+Modern, kullanıcı dostu ve duygusal bağ kuran tasarımı sayesinde hem hayvanseverleri hem de patili dostlarımızı güvenli bir platformda bir araya getirir.
+
+---
+
+## ✨ Temel Özellikler
+
+- **Keşfet (Ana Sayfa):**  
+  Sahiplendirilmeyi bekleyen hayvanlar ve geçici bakıcı ilanları için modern ve akıcı bir listeleme sistemi.
+
+- **Detaylı İlan Sayfası:**  
+  Hayvanın yaş, cins, kilo, sağlık durumu ve konum bilgilerini içeren gelişmiş kart yapısı.
+
+- **Gerçek Zamanlı Sohbet (Messages):**  
+  WhatsApp ve iOS mesajlaşma deneyimine benzer, `Inset Grouped` tasarıma sahip mesajlaşma sistemi.  
+  Okundu/okunmadı bilgisi ile anlık iletişim.
+
+- **Akıllı Profil Yönetimi:**  
+  Kullanıcı güven puanı, yorumlar ve detaylı profil analizi ile güvenilirlik artırımı.
+
+- **Doğrulanmış Hesap Sistemi:**  
+  Sahte hesapları engellemek için “Verified” rozetli güvenli kullanıcı yapısı.
+
+- **Animasyonlar & UX:**  
+  Yumuşak geçişli splash ekran, özel tab bar animasyonları ve modern kullanıcı deneyimi.
+
+- **Güvenli Altyapı:**  
+  BCrypt ile şifreleme ve JWT tabanlı güvenli oturum yönetimi.
+
+---
 
 ## 🛠️ Kullanılan Teknolojiler
 
-Bu proje, güçlü ve bağımsız iki ana modülden (Frontend & Backend) oluşmaktadır:
+### 📱 Frontend (Mobil Uygulama)
+- React Native & Expo (Expo Router)
+- Native StyleSheet
+- Feather Icons
+- React Native Reanimated (Animasyonlar için)
+- AsyncStorage (Local veri yönetimi)
+- SafeAreaContext
 
-### Frontend (Mobil Uygulama)
-- **Framework:** React Native & Expo (Expo Router)
-- **UI & Styling:** Native StyleSheet, Feather Icons, react-native-reanimated (Harika animasyonlar için)
-- **State & Storage:** AsyncStorage
-- **Ekstra:** SafeAreaContext, custom animated tab bars.
-
-### Backend (Sunucu & Veritabanı)
-- **Runtime:** Node.js & Express.js
-- **Veritabanı:** MySQL & Sequelize (ORM)
-- **Güvenlik:** JSON Web Tokens (JWT), Bcrypt.js
-- **Middleware:** CORS, Express JSON Parser
+### 🌐 Backend (Sunucu & Veritabanı)
+- Node.js & Express.js
+- MySQL
+- Sequelize (ORM)
+- JSON Web Token (JWT)
+- Bcrypt.js
+- CORS & Express Middleware
 
 ---
 
 ## 🚀 Kurulum (Local Development)
 
-Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları sırayla izleyin:
+Projeyi lokal ortamda çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
 
 ### 1️⃣ Veritabanı Kurulumu
-1. Bilgisayarınızda (MySQL) yüklü olmalıdır. XAMPP, MAMP veya doğrudan MySQL kullanabilirsiniz.
-2. `phpMyAdmin` veya MySQL konsolu üzerinden `patibak` adında yeni bir veritabanı oluşturun.
-3. Projedeki `backend/db.sql` dosyasını içe aktararak (import) veya `backend/seed.js` dosyasını çalıştırarak örnek tabloları oluşturun:
-   ```bash
-   cd backend
-   node seed.js
-   ```
 
-### 2️⃣ Backend Kurulumu
+1. Bilgisayarınızda MySQL kurulu olmalıdır (XAMPP, MAMP veya native MySQL).
+2. `patibak` adında yeni bir veritabanı oluşturun.
+3. Aşağıdaki yöntemlerden biri ile tabloları oluşturun:
+
 ```bash
 cd backend
-npm install
-# Sunucuyu başlatmak için:
-npm run dev
-```
-> *Sunucu varsayılan olarak `http://localhost:5000` veya makinenizin IP adresinde ayağa kalkacaktır.*
+node seed.js
+![IMG_1469](https://github.com/user-attachments/assets/dfc5b679-3f8e-4487-9f2b-42b24d784dc3)
+![IMG_1465](https://github.com/user-attachments/assets/7aaf6e05-ae5c-416c-a868-883a817de004)
+![IMG_1468](https://github.com/user-attachments/assets/636d6c02-d134-4500-aa76-d47e66691aaf)
+![IMG_1467](https://github.com/user-attachments/assets/c3225688-3d1a-4603-bd62-8c87427d4855)
+![IMG_1466](https://github.com/user-attachments/assets/12567666-e30a-4e8f-80dd-b32648d34354)
 
-### 3️⃣ Frontend Kurulumu
-> **Önemli Not:** Cep telefonunuzla test ediyorsanız bilgisayarınızın ve telefonunuzun aynı Wi-Fi ağına bağlı olduğundan emin olun.
-1. `frontend/constants/api.ts` dosyasına giderek bilgisayarınızın "Yerel IP Adresini" yazın (Örn: `192.168.1.x:5000`).
-```bash
-cd frontend
-npm install
-# Expo'yu başlatmak için:
-npx expo start
-```
-2. Terminalde çıkan QR kodu telefonunuzdaki **Expo Go** uygulaması ile okutarak projeyi test edebilirsiniz.
 
----
-
-## 📸 Ekran Görüntüleri ve Arayüz
-*(Screenshot/GIF buraya eklenecektir)*
-- Modern ve iOS tarzı "Inset Grouped" ayarlar ekranları.
-- Floating (havalı) arama çubuklu Sohbetler ana ekranı.
-- Kalın tipografili, sola yaslı büyük marka logolu App Header'ı.
-
-## 👥 Geliştirici
-
-**Furkan Coşkun** tarafından ❤ ve özveri ile geliştirilmiştir.
-
----
-> *"Satın Alma, Sahiplen!"* 🐾
