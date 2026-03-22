@@ -155,13 +155,3 @@ npx expo start
 
 ---
 
-## 🤝 Katkıda Bulunma
-
-Katkıda bulunmak isterseniz pull request gönderebilir veya issue açabilirsiniz.
-
----
-
-## 📄 Lisans
-
-Bu proje MIT lisansı altında sunulmaktadır.
-
