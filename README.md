@@ -38,6 +38,12 @@ Modern, kullanıcı dostu ve duygusal bağ kuran tasarımı sayesinde hem hayvan
   BCrypt ile şifreleme ve JWT tabanlı güvenli oturum yönetimi.
 
 ---
+![IMG_1469](https://github.com/user-attachments/assets/26f3f652-5438-4a0f-95e0-645d856ebd51)
+![IMG_1465](https://github.com/user-attachments/assets/aa2e9735-e464-4d9d-9942-30b6c109490c)
+![IMG_1466](https://github.com/user-attachments/assets/ab05b027-d237-4d7b-8cdc-9cc5d15d7b3e)
+![IMG_1467](https://github.com/user-attachments/assets/cbcab355-7a60-4bd8-8cbb-b914e90aa4f3)
+![IMG_1468](https://github.com/user-attachments/assets/c57e9b3a-5b23-49d1-b1ed-58b726e5581b)
+
 
 ## 🛠️ Kullanılan Teknolojiler
 
@@ -72,10 +78,5 @@ Projeyi lokal ortamda çalıştırmak için aşağıdaki adımları takip edebil
 ```bash
 cd backend
 node seed.js
-![IMG_1469](https://github.com/user-attachments/assets/dfc5b679-3f8e-4487-9f2b-42b24d784dc3)
-![IMG_1465](https://github.com/user-attachments/assets/7aaf6e05-ae5c-416c-a868-883a817de004)
-![IMG_1468](https://github.com/user-attachments/assets/636d6c02-d134-4500-aa76-d47e66691aaf)
-![IMG_1467](https://github.com/user-attachments/assets/c3225688-3d1a-4603-bd62-8c87427d4855)
-![IMG_1466](https://github.com/user-attachments/assets/12567666-e30a-4e8f-80dd-b32648d34354)
 
 
